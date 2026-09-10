@@ -96,7 +96,7 @@ const I18N = {
 
     'dl.head.h2': 'Download BubbleTranslate',
     'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 or later · 7&nbsp;MB',
+    'dl.mac.desc': 'Intel &amp; Apple Silicon · macOS 11 or later · 14&nbsp;MB',
     'dl.mac.btn': 'Download DMG',
     'dl.mac.run': 'Open the DMG and drag the app into Applications.',
     'dl.mac.note2': 'The app is ad-hoc signed, so macOS blocks the first launch. Run that once, or use <b>Open Anyway</b> in System Settings › Privacy &amp; Security.',
@@ -212,7 +212,7 @@ const I18N = {
 
     'dl.head.h2': 'BubbleTranslate\'i indirin',
     'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 veya üzeri · 7&nbsp;MB',
+    'dl.mac.desc': 'Intel ve Apple Silicon · macOS 11 veya üzeri · 14&nbsp;MB',
     'dl.mac.btn': 'DMG indir',
     'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
     'dl.mac.note2': 'Uygulama ad-hoc imzalı olduğu için macOS ilk açılışı engeller. Yukarıdaki komutu bir kez çalıştırın veya Sistem Ayarları › Gizlilik ve Güvenlik bölümünden <b>Yine de Aç</b>\'ı seçin.',
@@ -328,7 +328,7 @@ const I18N = {
 
     'dl.head.h2': 'Descarga BubbleTranslate',
     'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 o posterior · 7&nbsp;MB',
+    'dl.mac.desc': 'Intel y Apple Silicon · macOS 11 o posterior · 14&nbsp;MB',
     'dl.mac.btn': 'Descargar DMG',
     'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
     'dl.mac.note2': 'La app está firmada ad-hoc, así que macOS bloquea el primer inicio. Ejecuta ese comando una vez, o usa <b>Abrir de todos modos</b> en Ajustes del Sistema › Privacidad y seguridad.',
@@ -424,9 +424,9 @@ if (langSwitch) {
 // it's ready and the whole site starts offering it automatically.
 // Only the metered build (10 free translations a day, then Pro) is ever
 // offered. Both files are the plain-named metered builds on the app repo's main
-// branch. The macOS DMG is arm64 only, so an Intel Mac gets a download it
-// cannot run — worth a universal build before that matters. Windows has no
-// build yet and stays "coming soon" (file: null) until one exists.
+// branch. The macOS DMG is a universal binary, so it runs on both Intel and
+// Apple Silicon. Windows has no build yet and stays "coming soon"
+// (file: null) until one exists.
 const DOWNLOADS = {
   mac:     { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg',       label: 'macOS' },
   linux:   { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64', label: 'Linux' },
